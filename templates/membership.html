@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GymFit | About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">GYM<span>FIT</span></div>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('membership') }}">Membership</a>
+    </nav>
+</header>
+
+<section class="page active">
+    <h1>About GymFit</h1>
+    <p class="page-text">
+        GymFit is a modern gym management system focused on strength, discipline,
+        and healthy living.
+    </p>
+
+    <div class="media-box">
+        <img src="{{ url_for('static', filename='about.jpg') }}">
+    </div>
+
+    <h1>Our Mission</h1>
+    <p class="page-text">
+        To inspire people to live healthier lives through fitness and dedication.
+    </p>
+
+    <section class="why-us">
+        <h2>Why Choose Us</h2>
+        <div class="why-container">
+            <div class="why-card">
+                <h3>Professional Trainers</h3>
+                <p>Certified and experienced trainers.</p>
+            </div>
+            <div class="why-card">
+                <h3>Premium Facilities</h3>
+                <p>Modern equipment and environment.</p>
+            </div>
+            <div class="why-card">
+                <h3>Flexible Memberships</h3>
+                <p>Plans for every lifestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-box">
+            <h3>500+</h3>
+            <p>Active Members</p>
+        </div>
+        <div class="stat-box">
+            <h3>10+</h3>
+            <p>Certified Trainers</p>
+        </div>
+        <div class="stat-box">
+            <h3>24/7</h3>
+            <p>Gym Access</p>
+        </div>
+        <div class="stat-box">
+            <h3>5</h3>
+            <p>Years of Excellence</p>
+        </div>
+    </section>
+</section>
+
+<footer>
+    <p>© 2025 GymFit. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
